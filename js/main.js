@@ -96,6 +96,8 @@ function textGenerate() {
 
 // show popup
 $('#yes').click(function() {
+    document.getElementById('bgmusic').play();
+
     var audio = new Audio('sound/tick.mp3');
     audio.play();
     Swal.fire({
