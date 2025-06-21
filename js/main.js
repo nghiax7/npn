@@ -1,4 +1,13 @@
 $(document).ready(function() {
+    document.addEventListener('click', function () {
+  const audio = document.getElementById('bgmusic');
+  if (audio) {
+    audio.play().catch((e) => {
+      console.log('Tự phát nhạc bị chặn:', e);
+    });
+  }
+}, { once: true });
+
     // process bar
     setTimeout(function() {
         firstQuestion();
@@ -96,14 +105,7 @@ function textGenerate() {
 
 // show popup
 $('#yes').click(function() {
-  document.addEventListener('click', function () {
-  const audio = document.getElementById('bgmusic');
-  if (audio) {
-    audio.play().catch((e) => {
-      console.log('Tự phát nhạc bị chặn:', e);
-    });
-  }
-}, { once: true });
+ 
 
 
     var audio = new Audio('sound/tick.mp3');
