@@ -96,7 +96,15 @@ function textGenerate() {
 
 // show popup
 $('#yes').click(function() {
-    document.getElementById('bgmusic').play();
+  document.addEventListener('click', function () {
+  const audio = document.getElementById('bgmusic');
+  if (audio) {
+    audio.play().catch((e) => {
+      console.log('Tự phát nhạc bị chặn:', e);
+    });
+  }
+}, { once: true });
+
 
     var audio = new Audio('sound/tick.mp3');
     audio.play();
