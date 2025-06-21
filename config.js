@@ -15,5 +15,5 @@ const CONFIG = {
     mess: 'Vẫn thông minh đấy',
     messDesc: 'Tối nay anh sẽ ru em ngủ ngonn nhé.',
     btnAccept: 'Nhấp vào đây đi bé',
-    messLink: '/tang-crush-main/galaxy-viewer.html' //link mess của các bạn. VD: https://m.me/nam.nodemy
+    messLink: '/galaxy-viewer.html' //link mess của các bạn. VD: https://m.me/nam.nodemy
 }
